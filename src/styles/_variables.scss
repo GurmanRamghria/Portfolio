@@ -1,0 +1,146 @@
+// ========================================================
+// GURMANDEEP SINGH - PORTFOLIO SCSS VARIABLES & MIXINS
+// Theme: Exact Hero Card Style (#111827 Dark Slate & #29a1dd)
+// Background: Non-pitch-black dark slate / charcoal
+// Primary Accent: #29a1dd
+// ========================================================
+
+@forward './common';
+@use './common' as *;
+
+// Primary Accent
+$accent-cyan: #29a1dd;
+$accent-cyan-light: #52baf0;
+$accent-cyan-hover: #38b5f3;
+$accent-cyan-dark: #1b7ba9;
+$accent-glow: rgba(41, 161, 221, 0.45);
+$accent-glow-subtle: rgba(41, 161, 221, 0.15);
+
+// Dark Slate / Charcoal Backgrounds (Not pitch black #000000)
+$bg-base: #0d131f;
+$bg-base-alt: #111827;
+$bg-card: #111827; // Clean solid dark slate base matching Hero card
+$bg-card-inner: #0b111e;
+$bg-gradient-top: #0a0f18;
+$bg-gradient-mid: #101928;
+$bg-gradient-bottom: #0e1624;
+
+// Typography Colors
+$text-primary: #f1f5f9;
+$text-secondary: #94a3b8;
+$text-muted: #64748b;
+$text-cyan: #29a1dd;
+$text-light-cyan: #7dd3fc;
+
+// Fonts
+$font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-heading: 'Space Grotesk', $font-main;
+
+// Layout & Radius
+$header-height: 80px;
+$container-max: 1240px;
+$radius-sm: 8px;
+$radius-md: 14px;
+$radius-lg: 20px;
+$radius-xl: 24px;
+$radius-pill: 9999px;
+
+// Transitions
+$transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+$transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+// ========================================================
+// HERO CARD STYLE (Applied to ALL cards across the site)
+// Exact match to hero-developer-card:
+// background: #111827, border: 1px solid rgba(41, 161, 221, 0.25)
+// ========================================================
+@mixin hero-card-style {
+  background: #111827;
+  border: 1px solid rgba(41, 161, 221, 0.25);
+  border-radius: $radius-xl;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  transition: transform $transition-normal, border-color $transition-normal, box-shadow $transition-normal, background $transition-normal;
+
+  // Crisp top accent highlight
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(41, 161, 221, 0.6) 50%,
+      transparent 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &:hover {
+    border-color: rgba(41, 161, 221, 0.6);
+    background: #141d30;
+    box-shadow: 
+      0 25px 50px -10px rgba(0, 0, 0, 0.65),
+      0 0 25px rgba(41, 161, 221, 0.2);
+    transform: translateY(-5px);
+  }
+}
+
+// Unified card mixins
+@mixin proper-liquid-glass {
+  @include hero-card-style;
+}
+
+@mixin glass-card {
+  @include hero-card-style;
+}
+
+// Clean Pill Style (Matches Hero status pill)
+@mixin glass-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  background: rgba(41, 161, 221, 0.1);
+  border: 1px solid rgba(41, 161, 221, 0.25);
+  border-radius: $radius-pill;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $text-light-cyan;
+  transition: all $transition-normal;
+
+  &:hover {
+    background: rgba(41, 161, 221, 0.2);
+    border-color: rgba(41, 161, 221, 0.55);
+    color: #ffffff;
+  }
+}
+
+@mixin flex-center {
+  @include display(center, center);
+}
+
+// Responsive Breakpoints using user common variables
+@mixin mobile {
+  @media (#{$breakpoint_450}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (#{$breakpoint_MD}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (#{$breakpoint_LG}) {
+    @content;
+  }
+}

@@ -1,0 +1,175 @@
+@use '../../styles/variables' as *;
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.25rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+.project-card {
+  @include hero-card-style;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-6px);
+
+    .browser-external-link {
+      background: $accent-cyan;
+      border-color: $accent-cyan;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .project-title a {
+      color: $accent-cyan;
+    }
+  }
+}
+
+// Browser Mockup Top Bar
+.browser-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.75rem;
+  background: #0d1421;
+  border-bottom: 1px solid rgba(41, 161, 221, 0.15);
+  gap: 1rem;
+}
+
+.browser-dots {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+
+    &-red { background: #ff5f56; }
+    &-yellow { background: #ffbd2e; }
+    &-green { background: #27c93f; }
+  }
+}
+
+.browser-address {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.95rem;
+  background: #0b111e;
+  border: 1px solid rgba(41, 161, 221, 0.2);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  i {
+    color: #22c55e;
+    font-size: 0.72rem;
+  }
+}
+
+.browser-external-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: #0f1623;
+  border: 1px solid rgba(41, 161, 221, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  color: $text-secondary;
+  transition: all $transition-fast;
+  flex-shrink: 0;
+}
+
+// Project Card Body
+.project-card-body {
+  padding: 2rem 2rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  @include mobile {
+    padding: 1.5rem;
+  }
+}
+
+.project-meta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.project-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  background: #0f1623;
+  border: 1px solid rgba(41, 161, 221, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-category-badge {
+  font-size: 0.8rem;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+
+  a {
+    color: #ffffff;
+    transition: color $transition-fast;
+  }
+}
+
+.project-description {
+  font-size: 0.94rem;
+  color: $text-secondary;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(41, 161, 221, 0.12);
+}
+
+.project-tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  background: #0b111e;
+  border: 1px solid rgba(41, 161, 221, 0.2);
+  border-radius: 999px;
+  color: #cbd5e1;
+}
+
+.project-actions {
+  margin-top: auto;
+}

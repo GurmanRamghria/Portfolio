@@ -1,0 +1,99 @@
+@use '../../styles/variables' as *;
+
+.liquid-bg-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.liquid-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(95px);
+  opacity: 0.38;
+  mix-blend-mode: screen;
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, $accent-cyan 0%, rgba(41, 161, 221, 0.2) 65%, transparent 100%);
+  top: -120px;
+  left: -100px;
+  animation: floatOrb1 18s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, #186891 0%, rgba(41, 161, 221, 0.15) 70%, transparent 100%);
+  top: 35%;
+  right: -100px;
+  animation: floatOrb2 22s ease-in-out infinite alternate;
+}
+
+.orb-3 {
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, #104e70 0%, rgba(41, 161, 221, 0.18) 60%, transparent 100%);
+  bottom: 5%;
+  left: 15%;
+  animation: floatOrb3 25s ease-in-out infinite alternate;
+}
+
+.orb-4 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(82, 186, 240, 0.3) 0%, transparent 70%);
+  bottom: 30%;
+  right: 25%;
+  animation: floatOrb4 16s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(120px, 80px) scale(1.15); }
+  100% { transform: translate(60px, 140px) scale(0.95); }
+}
+
+@keyframes floatOrb2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-100px, 90px) scale(1.2); }
+  100% { transform: translate(-50px, -70px) scale(0.9); }
+}
+
+@keyframes floatOrb3 {
+  0% { transform: translate(0, 0) scale(0.95); }
+  50% { transform: translate(90px, -80px) scale(1.1); }
+  100% { transform: translate(-60px, 40px) scale(1.05); }
+}
+
+@keyframes floatOrb4 {
+  0% { transform: translate(0, 0) scale(1.1); }
+  100% { transform: translate(-80px, -90px) scale(0.85); }
+}
+
+.mesh-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(41, 161, 221, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(41, 161, 221, 0.035) 1px, transparent 1px);
+  background-size: 55px 55px;
+  opacity: 0.65;
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(41, 161, 221, 0.14) 0%, rgba(41, 161, 221, 0.03) 45%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}

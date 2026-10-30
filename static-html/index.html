@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurmandeep Singh | Frontend & React Native Developer</title>
+  <meta name="description" content="Portfolio of Gurmandeep Singh - Frontend Developer & React Native Specialist with 3+ years of experience in React.js, React Native, Redux Toolkit, and Modern Web UI.">
+  <meta name="keywords" content="Gurmandeep Singh, Frontend Developer, React JS, React Native, Web Developer, Malout, Punjab">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Liquid Glass Background Glow Orbs -->
+  <div class="liquid-bg-container" aria-hidden="true">
+    <div class="liquid-orb orb-1"></div>
+    <div class="liquid-orb orb-2"></div>
+    <div class="liquid-orb orb-3"></div>
+    <div class="liquid-orb orb-4"></div>
+    <div class="mesh-grid-overlay"></div>
+  </div>
+
+  <!-- Mouse Light Glow Aura -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Liquid Glass Header Navigation -->
+  <header class="glass-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Gurmandeep Singh Portfolio">
+        <span class="logo-symbol">&lt;G/&gt;</span>
+        <span class="logo-text">Gurman<span class="accent-dot">deep</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links (All Resume Sections) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active"><span>01.</span> Home</a></li>
+          <li><a href="#about" class="nav-link"><span>02.</span> About</a></li>
+          <li><a href="#experience" class="nav-link"><span>03.</span> Experience</a></li>
+          <li><a href="#skills" class="nav-link"><span>04.</span> Skills</a></li>
+          <li><a href="#education" class="nav-link"><span>05.</span> Education</a></li>
+          <li><a href="#strengths" class="nav-link"><span>06.</span> Strengths</a></li>
+          <li><a href="#contact" class="nav-link"><span>07.</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Right CTAs -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-liquid-sm">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer (Glassmorphic) -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-menu">
+          <li><a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+          <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#strengths" class="mobile-link"><i class="fa-solid fa-star"></i> Strengths</a></li>
+          <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="tel:9517893419" class="btn btn-liquid w-100 mb-2">
+            <i class="fa-solid fa-phone"></i> +91 9517893419
+          </a>
+          <a href="mailto:gurmandeep453@gmail.com" class="btn btn-glass w-100">
+            <i class="fa-solid fa-envelope"></i> gurmandeep453@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status pill -->
+          <div class="status-badge glass-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for New Roles & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Gurmandeep Singh</span>
+          </h1>
+
+          <div class="hero-designation">
+            <span class="role-prefix">I am a </span>
+            <span class="role-highlight" id="typewriterText">Frontend & React Native Specialist</span>
+          </div>
+
+          <p class="hero-bio">
+            Experienced developer and designer from <strong>Malout, Punjab</strong> with <strong>3+ years (37 months)</strong> of solid experience building high-performance, dynamic web apps & cross-platform mobile solutions using <strong>React.js, React Native, Redux Toolkit,</strong> and modern frontend architecture.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-liquid">
+              <span>Get In Touch</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="#experience" class="btn btn-glass">
+              <span>Explore Experience</span>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </a>
+            <a href="https://wa.me/919517893419?text=Hello%20Gurmandeep,%20I%20reviewed%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-glass-icon" title="Chat on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:gurmandeep453@gmail.com" class="btn btn-glass-icon" title="Email Me">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Quick Contact Bar -->
+          <div class="quick-contact-strip">
+            <div class="qc-item">
+              <i class="fa-solid fa-phone text-cyan"></i>
+              <a href="tel:9517893419">+91 9517893419</a>
+            </div>
+            <span class="qc-divider">•</span>
+            <div class="qc-item">
+              <i class="fa-solid fa-envelope text-cyan"></i>
+              <a href="mailto:gurmandeep453@gmail.com">gurmandeep453@gmail.com</a>
+            </div>
+            <span class="qc-divider">•</span>
+            <div class="qc-item">
+              <i class="fa-solid fa-location-dot text-cyan"></i>
+              <span>Malout, Muktsar Sahib, Punjab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Liquid Glass 3D Showcase Card -->
+        <div class="hero-visual">
+          <div class="liquid-card-wrapper">
+            <div class="hero-glass-card glass-panel" id="tiltCard">
+              <div class="glass-card-header">
+                <div class="mac-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="card-chip">developer_profile.json</div>
+              </div>
+
+              <div class="developer-avatar-wrapper">
+                <div class="avatar-glow"></div>
+                <div class="avatar-frame">
+                  <div class="initials-circle">GS</div>
+                </div>
+                <div class="avatar-info">
+                  <h3 class="avatar-name">Gurmandeep Singh</h3>
+                  <p class="avatar-role">Frontend & Mobile Engineer</p>
+                  <p class="avatar-location"><i class="fa-solid fa-location-dot"></i> Malout, Punjab, India</p>
+                </div>
+              </div>
+
+              <div class="code-preview">
+                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                <div class="code-line indent"><span class="code-prop">name:</span> <span class="code-str">"Gurmandeep Singh"</span>,</div>
+                <div class="code-line indent"><span class="code-prop">experience:</span> <span class="code-str">"37 Months (3+ Years)"</span>,</div>
+                <div class="code-line indent"><span class="code-prop">primaryStack:</span> [<span class="code-str">"React.js"</span>, <span class="code-str">"React Native"</span>],</div>
+                <div class="code-line indent"><span class="code-prop">stateManagement:</span> <span class="code-str">"Redux Toolkit"</span>,</div>
+                <div class="code-line indent"><span class="code-prop">styling:</span> [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"SASS"</span>, <span class="code-str">"Bootstrap 5"</span>],</div>
+                <div class="code-line indent"><span class="code-prop">status:</span> <span class="code-cyan">"Ready to Build High-Performance Solutions"</span></div>
+                <div class="code-line">};</div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-react">
+                <i class="fa-brands fa-react"></i> React.js
+              </div>
+              <div class="floating-badge badge-native">
+                <i class="fa-solid fa-mobile-screen-button"></i> React Native
+              </div>
+              <div class="floating-badge badge-redux">
+                <i class="fa-solid fa-layer-group"></i> Redux Toolkit
+              </div>
+              <div class="floating-badge badge-sass">
+                <i class="fa-brands fa-sass"></i> SASS & Bootstrap 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Highlight Counter Strip -->
+      <div class="container">
+        <div class="metrics-grid glass-panel">
+          <div class="metric-card">
+            <div class="metric-number" data-count="37">37<span class="text-cyan">+</span></div>
+            <div class="metric-label">Months Experience</div>
+            <div class="metric-sub">Over 3+ Years in Front-end</div>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-card">
+            <div class="metric-number" data-count="4">4<span class="text-cyan"></span></div>
+            <div class="metric-label">Company Roles</div>
+            <div class="metric-sub">Professional & Trainee Track</div>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-card">
+            <div class="metric-number">100<span class="text-cyan">%</span></div>
+            <div class="metric-label">Pixel-Perfect UI</div>
+            <div class="metric-sub">Responsive Across All Devices</div>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="text-cyan">Web &</span> App</div>
+            <div class="metric-label">Cross-Platform</div>
+            <div class="metric-sub">React.js + React Native</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag glass-pill"><i class="fa-regular fa-user"></i> Professional Profile</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">A deep dive into my background, journey, and technical craftsmanship.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Bio Card -->
+          <div class="about-main-card glass-panel">
+            <div class="card-glow-edge"></div>
+            <div class="about-heading-box">
+              <div class="icon-avatar">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3 class="about-name">Gurmandeep Singh</h3>
+                <p class="about-origin"><i class="fa-solid fa-map-pin text-cyan"></i> Malout, District Shri Muktsar Sahib, Punjab</p>
+              </div>
+            </div>
+
+            <p class="about-text">
+              I am Gurmandeep Singh from Malout, Punjab. I am an experienced frontend developer and UI designer with a strong foundation in modern web and mobile technologies. Seeking a challenging position to leverage my expertise in <strong>React.js, React Native, Redux Toolkit, HTML5, SASS, CSS3,</strong> and <strong>Bootstrap 5</strong> to contribute towards impactful, innovative digital products.
+            </p>
+
+            <p class="about-text">
+              With <strong>37 months (3+ years)</strong> of demonstrated experience across leading companies including <strong>Xdecoders Programming Services (XPS), Nextillo, Virtual IT Technology,</strong> and <strong>GNI Soft Solution</strong>, I specialize in translating complex design prototypes into responsive, pixel-perfect, and ultra-performant interfaces.
+            </p>
+
+            <div class="about-contact-badges">
+              <a href="tel:9517893419" class="contact-pill glass-pill">
+                <i class="fa-solid fa-phone text-cyan"></i>
+                <span>9517893419</span>
+              </a>
+              <a href="mailto:gurmandeep453@gmail.com" class="contact-pill glass-pill">
+                <i class="fa-solid fa-envelope text-cyan"></i>
+                <span>gurmandeep453@gmail.com</span>
+              </a>
+              <div class="contact-pill glass-pill">
+                <i class="fa-solid fa-location-dot text-cyan"></i>
+                <span>Punjab, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Pillars / What I Bring to the Table -->
+          <div class="about-features-grid">
+            <div class="feature-card glass-panel">
+              <div class="feature-icon">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+              <h4 class="feature-title">Pixel-Perfect UI/UX</h4>
+              <p class="feature-desc">Expert in crafting responsive layouts with HTML5, CSS3, SASS & Bootstrap 5 with attention to spacing and aesthetic typography.</p>
+            </div>
+
+            <div class="feature-card glass-panel">
+              <div class="feature-icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <h4 class="feature-title">Dynamic React & Redux</h4>
+              <p class="feature-desc">Building maintainable, high-performance web apps utilizing React hooks, reusable components, and Redux Toolkit state flow.</p>
+            </div>
+
+            <div class="feature-card glass-panel">
+              <div class="feature-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <h4 class="feature-title">Cross-Platform Native Apps</h4>
+              <p class="feature-desc">Creating consistent, native-feel iOS & Android apps using React Native with fluid transitions and smooth device integration.</p>
+            </div>
+
+            <div class="feature-card glass-panel">
+              <div class="feature-icon">
+                <i class="fa-solid fa-plug-circle-bolt"></i>
+              </div>
+              <h4 class="feature-title">API Integration & Collaboration</h4>
+              <p class="feature-desc">Collaborating seamlessly with backend teams for fast REST API integrations, code reviews, and following industry best practices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section-padding section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag glass-pill"><i class="fa-solid fa-briefcase"></i> Work History</span>
+          <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+          <p class="section-subtitle">3+ Years (37 Months) of hands-on experience in frontend & mobile development.</p>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-pulse"></span>
+              <i class="fa-solid fa-circle-dot"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="exp-badge active-role"><i class="fa-solid fa-circle-check"></i> Most Recent</span>
+                <span class="exp-duration"><i class="fa-regular fa-calendar"></i> 15 Months (June 2025 – Sept 2026)</span>
+              </div>
+              <h3 class="role-title">React JS Developer</h3>
+              <h4 class="company-name">Xdecoders Programming Services (XPS)</h4>
+              <p class="exp-description">
+                Spearheaded the development of dynamic, modular web applications using React.js and Redux Toolkit. Built clean UI components with pixel-perfect implementation, handled state architecture, and collaborated with cross-functional teams for smooth backend API integration.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Redux Toolkit</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">Performance Tuning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-circle-dot"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="exp-badge"><i class="fa-solid fa-laptop-code"></i> Frontend Specialist</span>
+                <span class="exp-duration"><i class="fa-regular fa-calendar"></i> 10 Months</span>
+              </div>
+              <h3 class="role-title">Frontend Developer</h3>
+              <h4 class="company-name">Nextillo</h4>
+              <p class="exp-description">
+                Developed responsive web pages and reusable interface modules using HTML, CSS, SASS, and Bootstrap 5. Ensured high rendering performance, cross-browser compatibility, and seamless translation of UI mockups into interactive designs.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">SASS</span>
+                <span class="tag">Bootstrap 5</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-circle-dot"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="exp-badge"><i class="fa-solid fa-code"></i> Junior Role</span>
+                <span class="exp-duration"><i class="fa-regular fa-calendar"></i> 6 Months</span>
+              </div>
+              <h3 class="role-title">Junior Developer</h3>
+              <h4 class="company-name">Virtual IT Technology</h4>
+              <p class="exp-description">
+                Assisted in frontend application development, testing UI components for responsiveness on multiple mobile and tablet screen viewports, identifying styling glitches, and standardizing CSS layouts.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">UI Development</span>
+                <span class="tag">Cross-Browser Testing</span>
+                <span class="tag">HTML / CSS</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-circle-dot"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="exp-badge"><i class="fa-solid fa-seedling"></i> Career Foundation</span>
+                <span class="exp-duration"><i class="fa-regular fa-calendar"></i> 6 Months</span>
+              </div>
+              <h3 class="role-title">Trainee Developer</h3>
+              <h4 class="company-name">GNI Soft Solution</h4>
+              <p class="exp-description">
+                Rigorous training and real-world project practice in core web development fundamentals, modern semantics, CSS box model, responsive layouts, package management, and team collaboration workflows.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Web Standards</span>
+                <span class="tag">Git & GitHub</span>
+                <span class="tag">Package Management</span>
+                <span class="tag">HTML / CSS Foundations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Summary 5-Point Box (From Resume) -->
+        <div class="summary-box glass-panel mt-5">
+          <div class="summary-header">
+            <div class="summary-icon">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <div>
+              <h3 class="summary-title">Professional Summary & Key Responsibilities</h3>
+              <p class="summary-sub">Highlights of 3+ Years in Frontend & Mobile Application Engineering</p>
+            </div>
+          </div>
+
+          <div class="summary-points-list">
+            <div class="point-item">
+              <div class="point-number">01</div>
+              <div class="point-content">
+                <strong>Pixel-Perfect UI Architecture:</strong> Built responsive UIs using HTML, CSS, Bootstrap, and SASS with strict pixel-perfect design implementation and seamless cross-device compatibility.
+              </div>
+            </div>
+            <div class="point-item">
+              <div class="point-number">02</div>
+              <div class="point-content">
+                <strong>Dynamic Web Applications:</strong> Developed dynamic web apps with React.js and Redux Toolkit for efficient global state management, fast rendering, and component reusability.
+              </div>
+            </div>
+            <div class="point-item">
+              <div class="point-number">03</div>
+              <div class="point-content">
+                <strong>Cross-Platform Mobile Apps:</strong> Created high-performance cross-platform mobile applications using React Native with fluid navigation and consistent UI/UX on iOS & Android.
+              </div>
+            </div>
+            <div class="point-item">
+              <div class="point-number">04</div>
+              <div class="point-content">
+                <strong>Seamless Team & API Collaboration:</strong> Collaborated with UI/UX designers and backend engineering teams for smooth REST API integration, data serialization, and performance optimization.
+              </div>
+            </div>
+            <div class="point-item">
+              <div class="point-number">05</div>
+              <div class="point-content">
+                <strong>Best Practices & Continuous Learning:</strong> Followed modern coding standards, active participation in code reviews, version control discipline, and staying updated with evolving frontend trends.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section-padding" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag glass-pill"><i class="fa-solid fa-code"></i> Tech Stack</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Competencies</span></h2>
+          <p class="section-subtitle">Technical skills and specialized tooling listed in my resume.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-wrapper">
+          <button class="skill-tab active" data-filter="all">All Skills</button>
+          <button class="skill-tab" data-filter="core">Core Frontend</button>
+          <button class="skill-tab" data-filter="mobile">Mobile & State</button>
+          <button class="skill-tab" data-filter="styling">Styling & UI</button>
+          <button class="skill-tab" data-filter="tools">Tools & Workflow</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- React JS -->
+          <div class="skill-card glass-panel" data-category="core">
+            <div class="skill-top">
+              <div class="skill-icon-wrap react-color">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h4 class="skill-name">React.js</h4>
+            <p class="skill-detail">Components, Hooks, Virtual DOM, Lifecycle, SPA architecture.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 92%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">92%</span>
+            </div>
+          </div>
+
+          <!-- React Native -->
+          <div class="skill-card glass-panel" data-category="mobile">
+            <div class="skill-top">
+              <div class="skill-icon-wrap react-color">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">React-Native</h4>
+            <p class="skill-detail">Cross-platform mobile apps for iOS & Android with native feel.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 88%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">88%</span>
+            </div>
+          </div>
+
+          <!-- Redux Toolkit -->
+          <div class="skill-card glass-panel" data-category="mobile">
+            <div class="skill-top">
+              <div class="skill-icon-wrap redux-color">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">Redux Tool Kit</h4>
+            <p class="skill-detail">Global state slices, thunks, middleware, scalable data store.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 86%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">86%</span>
+            </div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="skill-card glass-panel" data-category="core styling">
+            <div class="skill-top">
+              <div class="skill-icon-wrap html-color">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h4 class="skill-name">HTML / HTML5</h4>
+            <p class="skill-detail">Semantic tags, SEO-friendly layout, accessibility & validation.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 95%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">95%</span>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-card glass-panel" data-category="styling">
+            <div class="skill-top">
+              <div class="skill-icon-wrap css-color">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h4 class="skill-name">CSS / CSS3</h4>
+            <p class="skill-detail">Flexbox, CSS Grid, animations, glassmorphism, media queries.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 94%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">94%</span>
+            </div>
+          </div>
+
+          <!-- SASS -->
+          <div class="skill-card glass-panel" data-category="styling">
+            <div class="skill-top">
+              <div class="skill-icon-wrap sass-color">
+                <i class="fa-brands fa-sass"></i>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">SASS / SCSS</h4>
+            <p class="skill-detail">Mixins, variables, nested rules, modular design architecture.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">90%</span>
+            </div>
+          </div>
+
+          <!-- Bootstrap 5 -->
+          <div class="skill-card glass-panel" data-category="styling">
+            <div class="skill-top">
+              <div class="skill-icon-wrap bootstrap-color">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h4 class="skill-name">Bootstrap 5</h4>
+            <p class="skill-detail">Grid system, responsive utilities, rapid prototyping, modal/nav.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 92%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">92%</span>
+            </div>
+          </div>
+
+          <!-- Github & Git -->
+          <div class="skill-card glass-panel" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap git-color">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">Github & Git</h4>
+            <p class="skill-detail">Branching, merge requests, version tracking, collaboration.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 88%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">88%</span>
+            </div>
+          </div>
+
+          <!-- Package Management -->
+          <div class="skill-card glass-panel" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap npm-color">
+                <i class="fa-brands fa-npm"></i>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">Package Management</h4>
+            <p class="skill-detail">NPM, Yarn dependencies, package.json scripts, build tools.</p>
+            <div class="liquid-progress">
+              <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+            <div class="skill-meta">
+              <span>Proficiency</span>
+              <span class="text-cyan">85%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section-padding section-alt" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag glass-pill"><i class="fa-solid fa-graduation-cap"></i> Academic Credentials</span>
+          <h2 class="section-title">Education <span class="text-gradient">Background</span></h2>
+          <p class="section-subtitle">Academic milestones completed through the Punjab School Education Board.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Card 1: Senior Secondary -->
+          <div class="edu-card glass-panel">
+            <div class="edu-glow"></div>
+            <div class="edu-top-row">
+              <div class="edu-badge glass-pill">
+                <i class="fa-solid fa-calendar-check text-cyan"></i> Completed in 2019
+              </div>
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+            </div>
+
+            <h3 class="edu-degree">Senior Secondary Education (12th)</h3>
+            <h4 class="edu-board">Punjab School Education Board (PSEB)</h4>
+
+            <p class="edu-description">
+              Completed Senior Secondary schooling under Punjab Board with focus on foundational academics, discipline, problem solving, and analytical thinking that paved the way into software engineering.
+            </p>
+
+            <div class="edu-footer">
+              <span class="edu-tag"><i class="fa-solid fa-award text-cyan"></i> Punjab Board</span>
+              <span class="edu-tag"><i class="fa-solid fa-circle-check text-cyan"></i> 2019 Passout</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Higher Secondary -->
+          <div class="edu-card glass-panel">
+            <div class="edu-glow"></div>
+            <div class="edu-top-row">
+              <div class="edu-badge glass-pill">
+                <i class="fa-solid fa-calendar-check text-cyan"></i> Completed in 2017
+              </div>
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-school"></i>
+              </div>
+            </div>
+
+            <h3 class="edu-degree">Higher Secondary Education (10th)</h3>
+            <h4 class="edu-board">Punjab School Education Board (PSEB)</h4>
+
+            <p class="edu-description">
+              Completed High School matriculation under the Punjab Board, developing foundational mathematics, science, and computer literacy skills.
+            </p>
+
+            <div class="edu-footer">
+              <span class="edu-tag"><i class="fa-solid fa-award text-cyan"></i> Punjab Board</span>
+              <span class="edu-tag"><i class="fa-solid fa-circle-check text-cyan"></i> 2017 Passout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STRENGTHS SECTION ==================== -->
+    <section class="section-padding" id="strengths">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag glass-pill"><i class="fa-solid fa-star"></i> Core Attributes</span>
+          <h2 class="section-title">Key <span class="text-gradient">Strengths</span></h2>
+          <p class="section-subtitle">Personal and professional values that power my engineering delivery.</p>
+        </div>
+
+        <div class="strengths-grid">
+          <!-- Strength 1 -->
+          <div class="strength-card glass-panel">
+            <div class="strength-icon-box">
+              <i class="fa-solid fa-arrows-split-up-and-left"></i>
+            </div>
+            <h3 class="strength-title">Flexibility</h3>
+            <p class="strength-desc">
+              Comfortable shifting across diverse project requirements, changing design specs, and hybrid web & mobile codebases without friction.
+            </p>
+            <ul class="strength-perks">
+              <li><i class="fa-solid fa-check text-cyan"></i> Rapid context-switching</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Agile sprint readiness</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Versatile across web & mobile</li>
+            </ul>
+          </div>
+
+          <!-- Strength 2 -->
+          <div class="strength-card glass-panel featured-strength">
+            <div class="strength-icon-box glow-box">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="strength-title">Good Communication Skills</h3>
+            <p class="strength-desc">
+              Transparent, articulate communication with product managers, UX/UI designers, and backend developers to ensure zero requirement gaps.
+            </p>
+            <ul class="strength-perks">
+              <li><i class="fa-solid fa-check text-cyan"></i> Clear technical updates</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Proactive issue flagging</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Cross-functional synergy</li>
+            </ul>
+          </div>
+
+          <!-- Strength 3 -->
+          <div class="strength-card glass-panel">
+            <div class="strength-icon-box">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="strength-title">Adaptability</h3>
+            <p class="strength-desc">
+              Continuous drive to master emerging frontend libraries, design frameworks, and mobile updates to deliver modern solutions.
+            </p>
+            <ul class="strength-perks">
+              <li><i class="fa-solid fa-check text-cyan"></i> Fast learner of tools</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Problem-solving mindset</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Code review enthusiasm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section-padding section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag glass-pill"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Contact <span class="text-gradient">Details</span></h2>
+          <p class="section-subtitle">Reach out for frontend & React Native opportunities, collaborations, or inquiries.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left: Contact Details Cards -->
+          <div class="contact-info-col">
+
+            <!-- Phone Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Phone Number</span>
+                <a href="tel:9517893419" class="contact-value" id="phoneValue">+91 9517893419</a>
+                <p class="contact-note">Available for calls and direct inquiries</p>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:9517893419" class="action-btn" title="Call Now">
+                  <i class="fa-solid fa-phone-flip"></i>
+                </a>
+                <button class="action-btn copy-btn" data-copy="9517893419" title="Copy Number">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:gurmandeep453@gmail.com" class="contact-value" id="emailValue">gurmandeep453@gmail.com</a>
+                <p class="contact-note">Quick response within 24 hours</p>
+              </div>
+              <div class="contact-actions">
+                <a href="mailto:gurmandeep453@gmail.com" class="action-btn" title="Send Email">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </a>
+                <button class="action-btn copy-btn" data-copy="gurmandeep453@gmail.com" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Current Location</span>
+                <span class="contact-value">Malout, Punjab</span>
+                <p class="contact-note">District Shri Muktsar Sahib, Punjab, India</p>
+              </div>
+              <div class="contact-actions">
+                <a href="https://maps.google.com/?q=Malout,Punjab" target="_blank" rel="noopener noreferrer" class="action-btn" title="Open Map">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick WhatsApp Button -->
+            <div class="whatsapp-banner glass-panel">
+              <div class="wa-left">
+                <i class="fa-brands fa-whatsapp text-whatsapp"></i>
+                <div>
+                  <strong>Chat Directly on WhatsApp</strong>
+                  <p>Fastest way to get in touch with Gurmandeep</p>
+                </div>
+              </div>
+              <a href="https://wa.me/919517893419?text=Hi%20Gurmandeep,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <span>Start Chat</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Glass Contact Form -->
+          <div class="contact-form-col">
+            <div class="contact-form-wrapper glass-panel">
+              <div class="form-header">
+                <h3>Send a Message</h3>
+                <p>Have an exciting role or project? Let's discuss.</p>
+              </div>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <div class="input-wrap">
+                      <i class="fa-regular fa-user"></i>
+                      <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <div class="input-wrap">
+                      <i class="fa-regular fa-envelope"></i>
+                      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject / Purpose</label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" id="subject" name="subject" placeholder="Frontend Developer Opportunity / Project Inquiry" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <div class="input-wrap textarea-wrap">
+                    <i class="fa-regular fa-message"></i>
+                    <textarea id="message" name="message" rows="5" placeholder="Hi Gurmandeep, I would like to discuss..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-liquid w-100" id="submitBtn">
+                  <span>Send Message Directly</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="glass-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <span class="logo-symbol">&lt;G/&gt;</span>
+            <span class="logo-text">Gurman<span class="accent-dot">deep</span></span>
+          </a>
+          <p class="footer-tagline">
+            Frontend & React Native Developer crafting high-performance, user-centric web and mobile experiences.
+          </p>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-col">
+            <h5>Sections</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#strengths">Strengths</a></li>
+              <li><a href="#contact">Contact Details</a></li>
+              <li><a href="tel:9517893419">Call: 9517893419</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Gurmandeep Singh</strong>. Crafted with Liquid Glass & #29a1dd theme.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/919517893419" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:gurmandeep453@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:9517893419" title="Phone"><i class="fa-solid fa-phone"></i></a>
+          <a href="#home" class="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check text-cyan"></i>
+    <span id="toastMsg">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

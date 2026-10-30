@@ -1,0 +1,74 @@
+@use '../../styles/variables' as *;
+
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.strength-card {
+  @include hero-card-style;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  &.featured-strength {
+    border-color: rgba(41, 161, 221, 0.45);
+    background: #141d30;
+  }
+}
+
+.strength-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: $radius-md;
+  background: #0f1623;
+  border: 1px solid rgba(41, 161, 221, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  color: $accent-cyan;
+  margin-bottom: 1.5rem;
+  transition: $transition-normal;
+
+  &.glow-box {
+    background: $accent-cyan;
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(41, 161, 221, 0.45);
+  }
+}
+
+.strength-title {
+  font-size: 1.35rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.strength-desc {
+  font-size: 0.95rem;
+  color: $text-secondary;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.strength-perks {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(41, 161, 221, 0.12);
+
+  li {
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}

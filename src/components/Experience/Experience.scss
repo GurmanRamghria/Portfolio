@@ -1,0 +1,246 @@
+@use '../../styles/variables' as *;
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 2.5rem;
+
+  @include tablet {
+    padding-left: 1.75rem;
+  }
+}
+
+.timeline-line {
+  position: absolute;
+  top: 10px;
+  bottom: 20px;
+  left: 11px;
+  width: 2px;
+  background: linear-gradient(180deg, $accent-cyan 0%, rgba(41, 161, 221, 0.3) 70%, transparent 100%);
+  box-shadow: 0 0 10px rgba(41, 161, 221, 0.3);
+
+  @include tablet {
+    left: 8px;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.75rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 1.25rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0d1421;
+  border: 2px solid $accent-cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent-cyan;
+  font-size: 0.65rem;
+  z-index: 2;
+  box-shadow: 0 0 12px rgba(41, 161, 221, 0.6);
+
+  @include tablet {
+    left: -1.75rem;
+    width: 20px;
+    height: 20px;
+    font-size: 0.55rem;
+  }
+}
+
+.marker-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid $accent-cyan;
+  animation: pulsePing 2.2s infinite;
+}
+
+.timeline-content {
+  @include hero-card-style;
+  padding: 2rem 2.25rem;
+
+  &:hover {
+    transform: translateX(6px);
+  }
+
+  @include tablet {
+    padding: 1.5rem;
+  }
+}
+
+.timeline-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.exp-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: $radius-pill;
+  background: rgba(41, 161, 221, 0.12);
+  color: $text-light-cyan;
+  border: 1px solid rgba(41, 161, 221, 0.25);
+
+  &.active-role {
+    background: rgba(41, 161, 221, 0.22);
+    border-color: $accent-cyan;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(41, 161, 221, 0.3);
+  }
+}
+
+.exp-duration {
+  font-size: 0.85rem;
+  color: $text-secondary;
+
+  i {
+    color: $accent-cyan;
+    margin-right: 4px;
+  }
+}
+
+.role-title {
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: $accent-cyan;
+  margin-bottom: 1rem;
+}
+
+.exp-description {
+  font-size: 0.95rem;
+  color: $text-secondary;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  background: #0b111e;
+  border: 1px solid rgba(41, 161, 221, 0.2);
+  border-radius: $radius-sm;
+  color: #cbd5e1;
+}
+
+.summary-box {
+  @include hero-card-style;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem;
+
+  @include mobile {
+    padding: 1.5rem;
+  }
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(41, 161, 221, 0.15);
+}
+
+.summary-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: $radius-md;
+  background: #0f1623;
+  border: 1px solid $accent-cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent-cyan;
+  font-size: 1.4rem;
+  box-shadow: 0 0 20px rgba(41, 161, 221, 0.25);
+  flex-shrink: 0;
+}
+
+.summary-title {
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.summary-sub {
+  font-size: 0.88rem;
+  color: $text-secondary;
+  margin-top: 2px;
+}
+
+.summary-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.15rem 1.35rem;
+  background: #0c1322;
+  border: 1px solid rgba(41, 161, 221, 0.15);
+  border-radius: $radius-md;
+  transition: $transition-normal;
+
+  &:hover {
+    background: #111a2e;
+    border-color: rgba(41, 161, 221, 0.4);
+    transform: translateX(4px);
+  }
+}
+
+.point-number {
+  font-family: $font-heading;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: $accent-cyan;
+  background: rgba(41, 161, 221, 0.15);
+  padding: 0.2rem 0.55rem;
+  border-radius: $radius-sm;
+  border: 1px solid rgba(41, 161, 221, 0.25);
+}
+
+.point-content {
+  font-size: 0.95rem;
+  color: $text-secondary;
+  line-height: 1.65;
+
+  strong {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 2px;
+  }
+}
